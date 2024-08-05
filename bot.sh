@@ -1,4 +1,4 @@
-info="### $(date)"
+info="### Last time I woke up: $(date), back to sleep now..."
 echo "OS detected: $OSTYPE"
 
 case "$OSTYPE" in
@@ -7,14 +7,14 @@ case "$OSTYPE" in
         ;;
 esac
 
-echo "$info" >> README.md
+echo "$info" > README.md
 echo "$info"
 echo
 
-git add README.md
-git commit -m "The date is $info"
+git add .
+git commit -m "I'm so sleepy..."
 git push
 cd ~
 
 # crontab runs script every 0th minute of every other hour :)
-# 00 */2 * * * /bin/bash ~/commit-bot/bot.sh
+# 00 */3 * * * /bin/bash ~/commit-bot/bot.sh
