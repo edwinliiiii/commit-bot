@@ -11,10 +11,10 @@ echo "$info" > README.md
 echo "$info"
 echo
 
-git add .
+git add README.md
 git commit -m "I'm so sleepy..."
 git push
 cd ~
 
-# crontab runs script every 0th minute of every other hour :)
+# crontab runs script every 0th minute of every third hour :)
 # 00 */3 * * * /bin/bash ~/commit-bot/bot.sh
