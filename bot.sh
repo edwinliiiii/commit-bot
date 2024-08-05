@@ -14,5 +14,4 @@ echo
 git add README.md
 git commit -m "The date is $info"
 git push
-
 cd ~
