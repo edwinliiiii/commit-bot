@@ -1,4 +1,4 @@
-info="# $(date)"
+info="### $(date)"
 echo "OS detected: $OSTYPE"
 
 case "$OSTYPE" in
